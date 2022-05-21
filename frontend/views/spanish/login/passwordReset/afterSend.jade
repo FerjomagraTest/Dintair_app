@@ -1,0 +1,21 @@
+extends ../nav
+
+block content
+  
+  section.select-start-sign-in.container
+    a(href='/')
+      div.dintair
+        a.transformD(href='/')
+          img.dintair(src='/images/dintair/dintair_iso.png')
+
+    .box-sign-in
+
+        if messageReset.length > 0
+            p.messagesend<strong></strong> #{messageReset}
+    
+          
+        .btn_signIn
+          a.btn_a(href="/")
+            button() Ir al inicio
+      
+script(src='/javascripts/outlines-boxes.js')
