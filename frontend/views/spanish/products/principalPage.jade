@@ -18,7 +18,7 @@ block content
 
             div.btnobjects2
               a(data-toggle="tab" href="#menu1")
-                button.servicios(id='input2', onClick="asignarNota(2);", onmouseover="document.getElementById('input2').style.backgroundColor='#0066cc';", onmouseout="desmarcarNotas();") Mis Servicios
+                button.servicios(id='input2', onClick="asignarNota(2);", onmouseover="document.getElementById('input2').style.backgroundColor='#0066cc';", onmouseout="desmarcarNotas();") Mis servicios
 
         div.productosBox.tab-content
           div(id='menu', class='tab-pane fade in active')
@@ -30,8 +30,8 @@ block content
                   button() Nuevo producto
                 
               div.imgText
-                img.data(src='/images/icons/alMayorPord.png')
-                h2.data Mis Productos
+                img.data(src='/images/icons/alMayorProd.png')
+                h2.data Mis productos
 
             section.boxesProds
               for productos_user in myproducts
@@ -70,8 +70,8 @@ block content
                   button() Nuevo servicio
 
               div.imgText
-                img.data(src='/images/icons/truck_icon.png')
-                h2.data Mis Servicios
+                img.data(src='/images/services/truck_icon.png')
+                h2.data Mis servicios
             for data_serv in myServices
               if data_serv.deleted == false
                 div.radioBtn.col-lg-4.col-md-6.col-sm-6.col-xs-12
@@ -108,12 +108,12 @@ block content
                 div.titlePage
                   
                   a(href='/Dintair/products/add/Product')
-                    img.xicon(src='/images/icons/xicon.png')
+                    img.xicon(src='/images/users/icons/xIcon.png')
                     button() Nuevo producto
 
                 div.imgText
-                  img.data(src='/images/icons/alMayorPord.png')
-                  h2.data Mis Productos
+                  img.data(src='/images/icons/alMayorProd.png')
+                  h2.data Mis productos
 
               section.boxesProds
                 for productos_user in myproducts
@@ -153,11 +153,11 @@ block content
                 section.backProds
                   div.titlePage
                     a(href='/Dintair/services/add/Service')
-                      img.xicon(src='/images/icons/xicon.png')
+                      img.xicon(src='/images/users/icons/xIcon.png')
                       button() Nuevo servicio
                   div.imgText
-                    img.data(src='/images/icons/truck_icon.png')
-                    h2.data Mis Servicios
+                    img.data(src='/images/services/truck_icon.png')
+                    h2.data Mis servicios
                 for data_serv in myServices
                   if data_serv.deleted == false
                     div.radioBtn.col-lg-4.col-md-6.col-sm-6.col-xs-12
@@ -182,7 +182,7 @@ block content
     else
 
       div.imgDefaultProdServ
-        img(src='/images/defaultimages/defaultpicpordserv.png')
+        img(src='/images/icons/defaultpicpordserv.png')
 
       p.textSP No haz agregado ningún producto o servicio
 

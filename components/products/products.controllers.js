@@ -4,6 +4,14 @@ const UploadTavo = require('../../middleware/uploadImages/upload')
 const fs = require('fs')
 const controller = {}
 
+var cloudinary_users = require('cloudinary')
+cloudinary_users.config({
+  cloud_name: process.env.CLOUDINARY_USERSNAME,
+  api_key: process.env.CLOUDINARY_APIKEY,
+  api_secret: process.env.CLOUDINARY_APISECRET
+})
+
+
 controller.productsIndexView = (req,res) => {
     res.render('views/spanish/products/indexView', {
         message : req.flash('messagesend'),

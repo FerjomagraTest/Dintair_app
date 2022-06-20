@@ -52,9 +52,10 @@ var passwordResetRouter = require('./components/passwordReset/passwordReset.rout
 var signupRouter = require('./components/signUp/signUp.routes.js')
 var restrcitedProductsRouter = require('./components/restrictedProducts/restrictedProducts.routes.js')
 var productsRouter = require('./components/products/products.routes.js')
+var servicesRouter = require('./components/services/services.routes.js')
 var contactusRouter = require('./components/contactUs/contactus.routes')
 var politicsConditionsRouter = require('./components/politicsConditions/politicsConditions.routes')
-var logoutRoutes = require('./components/logout/logout.routes')
+var logoutRouter = require('./components/logout/logout.routes')
 
 //user interface
 var headerSearchRoutes = require('./components/searching/header/headerSearch.routes')
@@ -66,9 +67,10 @@ app.use('/',
   signupRouter,
   restrcitedProductsRouter,
   productsRouter,
+  servicesRouter,
   contactusRouter,
   politicsConditionsRouter,
-  logoutRoutes,
+  logoutRouter,
   
   //userInterface
   headerSearchRoutes,
