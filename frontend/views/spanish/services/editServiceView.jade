@@ -13,7 +13,6 @@ block content
           li 
           li 
           li
-          li
         // fieldsets
         fieldset
           h2.fs-title Mercado meta
@@ -104,50 +103,6 @@ block content
           input.previous.action-button(type='button', name='Anterior', value='Anterior')
           input.next.action-button(type='button', name='Continuar', value='Continuar')
 
-        fieldset
-
-          h2.fs-title Horarios de atención
-
-          div.choose_time
-            
-            div.first.flex_b_t
-              h2 Día y hora de apertura
-              div.day
-                
-                select(name='dia_i', id='dia_i')
-                  option(value='Lunes', selected=data_serv.dia_aper== 'Lunes') Lunes
-                  option(value='Martes', selected=data_serv.dia_aper== 'Martes') Martes
-                  option(value='Miércoles', selected=data_serv.dia_aper== 'Miércoles') Miércoles
-                  option(value='Jueves', selected=data_serv.dia_aper== 'Jueves') Jueves
-                  option(value='Viernes', selected=data_serv.dia_aper== 'Viernes') Viernes
-                  option(value='Sábado', selected=data_serv.dia_aper== 'Sábado') Sábado
-                  option(value='Domingo', selected=data_serv.dia_aper== 'Domingo') Domingo
-                
-                input.time(id='horainicio', name='horainicio', value='#{data_serv.hora_apertura}', data-error-id="error_horainicio")
-                script.
-                  $('#horainicio').timepicker()
-
-              
-
-            div.second.flex_b_t
-              h2 Día y hora de cierre
-              div.day
-                select(name='dia_f', id='dia_f', data-error-id="error_dia_f")
-                  option(value='Lunes', selected=data_serv.dia_cierr== 'Lunes') Lunes
-                  option(value='Martes', selected=data_serv.dia_cierr== 'Martes') Martes
-                  option(value='Miércoles', selected=data_serv.dia_cierr== 'Miércoles') Miércoles
-                  option(value='Jueves', selected=data_serv.dia_cierr== 'Jueves') Jueves
-                  option(value='Viernes', selected=data_serv.dia_cierr== 'Viernes') Viernes
-                  option(value='Sábado', selected=data_serv.dia_cierr== 'Sábado') Sábado
-                  option(value='Domingo', selected=data_serv.dia_cierr== 'Domingo') Domingo
-
-                input.time(id='horafinal', name='horafinal', value='#{data_serv.hora_cierre}', data-error-id="error_horafinal")
-                script.
-                  $('#horafinal').timepicker()
-
-
-          input.previous.action-button(type='button', name='Anterior', value='Anterior')
-          input.next.action-button(type='button', name='Continuar', value='Continuar')
 
         fieldset
           h2.fs-title Agrega imágenes de tu servicio (máximo 4 imágenes)
@@ -175,8 +130,3 @@ block content
     script(src='/javascripts/productsAndServices/services/validateSteps.js')
     script(src='/javascripts/productsAndServices/script1.js')
     script(src='/javascripts/productsAndServices/inputFocus.js')
-//-   script(src='/javascripts/dynamicForms/script.js')
-//-   script(src='/javascripts/dynamicForms/script1.js')
-  
-//-   script(src='/javascripts/MultiStepForm/services/validateMulti.js')
-//-   script(src='/javascripts/MultiStepForm/services/script.js')

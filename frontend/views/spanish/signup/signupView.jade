@@ -7,17 +7,17 @@ block content
 
     form#formu.form-register.col-lg-4.col-lg-offset-4.col-md-6.col-md-offset-3.col-sm-6.col-sm-offset-3.col-xs-12(action='/Dintair/es/Signup', method='post', name='formu', onsubmit='return Validate()')
 
-      if message.length > 0
-        p.message<strong></strong> #{message}
-
-      if check.length > 0
-        p.check<strong></strong> #{check}
-
       div.dintair
         a.transformD(href='/')
           img.dintair(src='/images/dintair/dintair_iso.png')
 
         h2.text Únete a Dintair para continuar
+      
+      if message.length > 0
+        p.message<strong></strong> #{message}
+
+      if check.length > 0
+        p.check<strong></strong> #{check}
         
       .form-register-second.col-lg-12.col-md-12.col-sm-12.col-xs-12
         

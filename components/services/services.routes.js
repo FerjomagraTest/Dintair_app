@@ -9,6 +9,8 @@ router.get('/Dintair/services/view/:id', isLoggedIn, indexControllers.serviceVie
 
 router.get('/Dintair/services/edit/:id', isLoggedIn, indexControllers.editServiceView)
 
+router.post('/Dintair/services/addmultiple/:id', isLoggedIn, indexControllers.editServicePut)
+
 router.post('/Dintair/services/view/delete/:id/:nombre', isLoggedIn, indexControllers.deleteServicePut)
 
 

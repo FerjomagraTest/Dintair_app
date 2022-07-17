@@ -58,6 +58,7 @@ var politicsConditionsRouter = require('./components/politicsConditions/politics
 var logoutRouter = require('./components/logout/logout.routes')
 
 //user interface
+var usersRouter = require('./components/users/users.routes')
 var headerSearchRoutes = require('./components/searching/header/headerSearch.routes')
 
 app.use('/',
@@ -73,6 +74,7 @@ app.use('/',
   logoutRouter,
   
   //userInterface
+  usersRouter,
   headerSearchRoutes,
 
 )

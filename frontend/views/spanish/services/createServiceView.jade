@@ -13,7 +13,6 @@ block content
           li 
           li 
           li
-          li
 
         fieldset
           h2.fs-title Mercado meta
@@ -94,52 +93,6 @@ block content
           input.previous.action-button(type='button', name='Anterior', value='Anterior')
           input.next.action-button(type='button', name='Continuar', value='Continuar')
 
-        fieldset
-
-          h2.fs-title Horarios de atención (opcional)
-          #error_horainicio
-          #error_horafinal
-          div.choose_time
-            
-            div.first.flex_b_t
-              h2 Día y hora de apertura
-              div.day
-                
-                select(name='dia_i', id='dia_i')
-                  option(value='Lunes') Lunes
-                  option(value='Martes') Martes
-                  option(value='Miércoles') Miércoles
-                  option(value='Jueves') Jueves
-                  option(value='Viernes') Viernes
-                  option(value='Sábado') Sábado
-                  option(value='Domingo') Domingo
-                
-                input.time(id='horainicio', name='horainicio', data-error-id="error_horainicio")
-                script.
-                  $('#horainicio').timepicker()
-
-              
-
-            div.second.flex_b_t
-              h2 Día y hora de cierre
-              div.day
-                select(name='dia_f', id='dia_f', data-error-id="error_dia_f")
-                  option(value='Lunes') Lunes
-                  option(value='Martes') Martes
-                  option(value='Miércoles') Miércoles
-                  option(value='Jueves') Jueves
-                  option(value='Viernes') Viernes
-                  option(value='Sábado') Sábado
-                  option(value='Domingo') Domingo
-
-                input.time(id='horafinal', name='horafinal', data-error-id="error_horafinal")
-                script.
-                  $('#horafinal').timepicker()
-
-              
-
-          input.previous.action-button(type='button', name='Anterior', value='Anterior')
-          input.next.action-button(type='button', name='Continuar', value='Continuar')
 
         fieldset
           h2.fs-title Agrega imágenes de tu servicio (máximo 4 imágenes)
@@ -162,12 +115,3 @@ block content
     script(src='/javascripts/productsAndServices/script1.js')
     script(src='/javascripts/productsAndServices/inputFocus.js')
     //- script(src='/javascripts/productsAndServices/validateFieldsPictures.js')
-
-
-
-//-   script(src='/javascripts/dynamicForms/script.js')
-//-   script(src='/javascripts/dynamicForms/script1.js')
-
-//-   script(src='/javascripts/MultiStepForm/services/validateMulti.js')
-//-   script(src='/javascripts/MultiStepForm/services/script.js')
-//-   script(src='/javascripts/focuses/create_service.js')

@@ -182,6 +182,102 @@ controller.editServiceView = (req,res) => {
     })
 }
 
+controller.editServicePut = (req,res) => {
+    res.setHeader('Content-Type', 'application/json');
+
+    var data_serv_user = {
+        name_serv : req.body.name_serv,
+        targetsell: req.body.targetsell,
+        tipo_serv : req.body.tipo_serv,
+        desc_serv : req.body.desc_serv,
+        origin_serv : req.body.origin_serv,
+        especialidades_serv : req.body.especialidades_serv,
+        imageServicios: req.body.fileOld,
+        //time
+        hora_apertura : req.body.horainicio,
+        hora_cierre : req.body.horafinal,
+        dia_aper : req.body.dia_i,
+        dia_cierr : req.body.dia_f
+    }
+
+    var result = {state : 0, msg : 'No se pudo registrar'};
+    var files = JSON.parse(req.body.files);
+
+    if(files.length){
+        Servicios.findByIdAndUpdate({'_id': req.params.id}, data_serv_user, function(servicios){
+            result = {
+                state : 1,
+                msg : 'ok datos',
+                data: {url: '/Dintair/kindProduct'}
+            };
+        })
+
+        function saveData(newRoute){
+            data_serv_user.imageServicios = newRoute;
+
+            Servicios.findByIdAndUpdate({'_id': req.params.id}, data_serv_user, function(err){
+                if(!err){
+                    req.flash('messageprod' , 'Servicio ' + data_serv_user.name_serv + ' modificado')
+
+                    result = {
+                        state : 1,
+                        msg : 'ok',
+                        data: {url: '/Dintair/kindProduct'}
+                    };
+                } else {
+                    result = {state : 0, msg : 'No se registrar los cambios'};
+                }
+
+                res.send(JSON.stringify(result));
+            });
+        }
+
+        var count = files.length;
+        var index = 0;
+        var newRoute = '';
+
+        files.map((item) => {
+            var newFile = UploadTavo()._getFile(item);
+            var nameFile = UploadTavo()._getRandom(5) + '-' + req.params.id + '.' + newFile.type;
+            var routeFile = './uploads/' + nameFile;
+
+            fs.writeFile(routeFile, newFile.data, {encoding: 'base64'}, function(err) {
+                if (err) {
+                    console.log('err', err);
+                } else {
+                    cloudinary_users.uploader.upload(routeFile, function(result) {
+                        newRoute = (newRoute)? newRoute + '---' + result.url : result.url;
+
+                        index++;
+                        if(index == count){
+                            newRoute = (req.body.fileOld)? req.body.fileOld + '---' + newRoute : newRoute;
+
+                            saveData(newRoute);
+                        }
+                    })
+                }
+            });
+        });
+
+    } else {
+        Servicios.findByIdAndUpdate({'_id': req.params.id}, data_serv_user, function(err){
+            if(!err){
+                req.flash('messageprod' , 'Servicio ' + data_serv_user.name_serv + ' modificado')
+
+                result = {
+                    state : 1,
+                    msg : 'ok',
+                    data: {url: '/Dintair/kindProduct'}
+                };
+            } else {
+                result = {state : 0, msg : 'No se pudo modificar los cambios, intentelo mas tarde'};
+            }
+
+            res.send(JSON.stringify(result));
+        })
+
+    }
+}
 
 
 controller.deleteServicePut = (req,res) => {

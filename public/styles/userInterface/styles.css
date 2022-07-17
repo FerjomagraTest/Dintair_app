@@ -226,7 +226,7 @@ header .HomePage div.ThreeSegments div.thirdSHomePage div.buttonsforactions div.
   transition: all 0.3s ease;
   margin-top: 2px;
   padding: 11.0px;
-  border-radius: 4px;
+  border-radius: 6px;
   outline: none;
 }
 header .HomePage div.ThreeSegments div.thirdSHomePage div.buttonsforactions div.createbox button#noti_Button:hover{
@@ -248,7 +248,7 @@ header .HomePage div.ThreeSegments div.thirdSHomePage div.buttonsforactions div.
     font-size: 14px;
     text-align: left;
     list-style: none;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 /* AN ARROW LIKE STRUCTURE JUST OVER THE NOTIFICATIONS WINDOW */
 
@@ -352,6 +352,7 @@ header .HomePage div.ThreeSegments div.thirdSHomePage .dropdown-menu {
   left:auto;
   margin-top: 45px;
   box-shadow:none;
+  border-radius: 6px;
 }
 header .HomePage div.ThreeSegments div.thirdSHomePage .dropdown-menu li a.headerA{
   height: 62px;
@@ -438,7 +439,7 @@ header .HomePage div.ThreeSegments div.thirdSHomePage .dropdown li a p.name{
 header .HomePage div.ThreeSegments div.thirdSHomePage .dropdown li a.actions2{
   color: white;
   opacity: 0.98;
-  border-radius: 4px;
+  border-radius: 6px;
   text-decoration: none;
   background: #4d94ff;
   transition: all 0.3s ease;
@@ -456,7 +457,7 @@ header .HomePage div.ThreeSegments div.thirdSHomePage .dropdown li a.actions2 im
 header .HomePage div.ThreeSegments div.thirdSHomePage .dropdown li a.actions3{
   color: white;
   opacity: 0.98;
-  border-radius: 4px;
+  border-radius: 6px;
   background: #d9d9d9;
   text-decoration: none;
 
@@ -472,7 +473,7 @@ header .HomePage div.ThreeSegments div.thirdSHomePage .dropdown li a.actions3:ho
 header .HomePage div.ThreeSegments div.thirdSHomePage .dropdown li a.action{
   color: white;
   opacity: 0.98;
-  border-radius: 4px;
+  border-radius: 6px;
   background: #d9d9d9;
   text-decoration: none;
 
@@ -593,8 +594,7 @@ div.block_search #content-search-header {
 
   text-align: left;
 
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 6px;
 }
 
 div.block_search #content-search-header article a{
@@ -610,6 +610,7 @@ div.block_search #content-search-header article a{
 div.block_search #content-search-header article a:hover{
   transform: (1.1,1.1);
   background-color: #f2f2f2;
+  border-radius: 6px;
 }
 
 div.block_search #content-search-header article a img, #content-search-header article a p{
@@ -701,7 +702,7 @@ section.dashboardPage div.secondHeader div.ThreeSegments div.firstSHomePage butt
     border: none;
     padding: 5px;
     text-align: center;
-    border-radius: 4px;
+    border-radius: 6px;
     webkit-box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
     box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
     outline: none;
@@ -910,7 +911,7 @@ section.dashboardPage div.secondHeader div.ThreeSegments div.secondSHomePage div
   border: none;
   padding: 5px;
   text-align: center;
-  border-radius: 4px;
+  border-radius: 6px;
   webkit-box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
     box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
   outline: none;
@@ -1012,7 +1013,7 @@ section.dashboardPage div.secondHeader div.ThreeSegments div.secondSHomePage div
 section.dashboardPage div.secondHeader div.ThreeSegments div.secondSHomePage div.Search button.inPublic:hover{
   transform: (1.1,1.1);
   color: #2089f8;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 section.dashboardPage div.secondHeader div.ThreeSegments div.secondSHomePage div.Search div.modal{
   display: none;
@@ -1292,7 +1293,7 @@ section.dashboardPage div.secondHeader div.ThreeSegments div.secondSHomePage div
   margin: 5px;
   text-align: left;
   border: 1px solid #e6e6e6;
-  border-radius: 4px;
+  border-radius: 6px;
   display: flex;
   vertical-align: middle;
   align-items: center;
@@ -1424,7 +1425,7 @@ section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.firstSHomePage
   border:1px solid #f2f2f2;
   padding: 5px;
   margin-top: 10px;
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: white;
   transition: all 0.3s ease;
 }
@@ -1497,7 +1498,7 @@ section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.firstSHomePage
   color: white;
   font-size: 14px;
   border: 1px solid #00cc88;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-right:2px;
   width: 50%;
 }
@@ -1506,7 +1507,7 @@ section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.firstSHomePage
   color: white;
   font-size: 14px;
   border: 1px solid #00cc88;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-left: 2px;
   width: 50%;
 }
@@ -1668,7 +1669,7 @@ section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.firstSHomePage
   border:none;
   padding: 14px;
   font-size: 13px;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 
@@ -1728,7 +1729,7 @@ section.dashboardPage div.big_box_markets div.box_each_market div.second_part{
   padding: 25px;
   border:1px solid #d9d9d9;
   background-color: white;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -1883,14 +1884,14 @@ section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.secondSHomePag
   background-color: #00cc88;
   color: white;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.secondSHomePage div.boxCreatePublication div.boxeachpublication{
   width: 100%;
   height: 100%;
   background-color: white;
   border: 1px solid #e6e6e6;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -1973,7 +1974,7 @@ section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.secondSHomePag
 section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.secondSHomePage div.boxCreatePublication div.boxeachpublication .picturescontent img.one_image{
   width: 100%;
   display: inline-block;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor:pointer;
 }
 
@@ -1984,7 +1985,7 @@ section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.secondSHomePag
   border:1px solid #0663c6;
   color:#0663c6;
   transition: all 0.3s ease;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 13px;
 }
 section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.secondSHomePage div.boxCreatePublication div.boxeachpublication div.so_networks .btn-primary:hover{
@@ -2018,7 +2019,7 @@ section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.secondSHomePag
 }
 section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.secondSHomePage div.boxCreatePublication div.boxeachpublication div.spaceLun div.firstitem img.one_image{
   width: 100%;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
@@ -2234,7 +2235,7 @@ section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.secondSHomePag
   background-color: white;
   border: 1px solid #0663c6;
   color: #0663c6;
-  border-radius: 4px;
+  border-radius: 6px;
   outline: none;
   padding: 6px;
   width: 70%;
@@ -2263,7 +2264,7 @@ section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.secondSHomePag
   background-color: #00cc88;
   padding: 8px;
   color: white;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: all 0.3s ease;
 }
 section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.secondSHomePage div.boxCreatePublication div.e_public_ation a button:hover{
@@ -2291,7 +2292,7 @@ section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.thirdSHomePage
   width: 100%;
   border:1px solid #2089f8;
   padding: 5px;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: all 0.3s ease;
   outline: none;
 }
@@ -2326,7 +2327,7 @@ section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.thirdSHomePage
   border:1px solid #f2f2f2;
   padding: 0px;
   margin-top: 10px;
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: white;
   transition: all 0.3s ease;
 }
@@ -2455,7 +2456,7 @@ section.dashboardPage div.thirdHeaderContent div.contenidoTHC div.thirdSHomePage
 .prod-start button.btn_selec_pic{
   background-color: #00cc88;
   border: 1px solid #00cc88;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 5px;
   color: white;
   margin-top: 5px;
@@ -2562,7 +2563,7 @@ form.change_portada_form div#port_img p.palabra{
   letter-spacing: 0.3px;
   font-size: 15px;
   padding:8px;
-  border-radius: 4px;
+  border-radius: 6px;
   color: #737373;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
@@ -2620,7 +2621,7 @@ form.change_portada_form input.save_changes[type='submit']{
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin-top: 5px;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 8px;
 }
 form.change_portada_form input.save_changes[type='submit']:hover {
@@ -2656,7 +2657,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
 
 .prod-start div.information_boxes div.environment_userprofile div.first_box_inline div.profile_pic_c{
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 6px;
   text-align: center;
   margin:0 auto;
   /*background-color: transparent;*/
@@ -2718,7 +2719,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
   padding-left: 4px;
   color: white;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .prod-start div.information_boxes div.environment_userprofile div.first_box_inline div.profile_pic_c div.clientes div.messages div.image div#port_img input#ambassadorIMGs{
@@ -2772,7 +2773,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
 .prod-start div.information_boxes div.environment_userprofile div.first_box_inline div.profile_pic_c div.clientes div.messages input.submit[type='submit']{
   background-color:#336699;
   color: white;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 8px;
   width: 90px;
   border:none;
@@ -2833,7 +2834,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
   /*background: linear-gradient(140deg ,#00e68a,#22c35d);*/
   background: rgba(0, 204, 136, 0.2);
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 6px;
   vertical-align: middle;
   align-items: center;
 }
@@ -2888,7 +2889,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
 
   margin:0 auto;
   max-width: 2000px;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 .prod-start div.information_boxes div.environment_userprofile div.first_box_inline div.profile_pic_c div.data_prof div.first_img_cr div.header_message{
   margin-top: 0px;
@@ -2918,7 +2919,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
   padding-left: 4px;
   color: white;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .prod-start div.information_boxes div.environment_userprofile div.first_box_inline div.profile_pic_c div.data_prof div.first_img_cr div.header_message div.messages div#port_img input#ambassadorIMGs{
@@ -2974,7 +2975,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
   border:none;
   padding: 8px;
   width: 90px;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -3043,7 +3044,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
   width: 93%;
   color: white;
   transition: all 0.3s ease;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 13px;
 }
 .prod-start div.information_boxes div.environment_userprofile div.first_box_inline div.profile_pic_c div.data_prof div.boxes_btns_opts form button:hover{
@@ -3064,7 +3065,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
   background-color: white;
   border:1px solid #0663c6;
   color:#0663c6;
-  border-radius: 4px;
+  border-radius: 6px;
   outline: none;
   padding: 6px;
   width: 50%;
@@ -3143,7 +3144,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
   border:1px solid #cccccc;
   margin:0 auto;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 6px;
   white-space: nowrap;
 }
 .prod-start div.information_boxes div.environment_userprofile div.first_box_inline div.profile_pic_c div.data_prof div.boxes_btns_opts .modal-content form div.messages{
@@ -3160,7 +3161,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
 }
 .prod-start div.information_boxes div.environment_userprofile div.first_box_inline div.profile_pic_c div.data_prof div.boxes_btns_opts .modal-content form div.messages input[type='text']{
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 6px;
   width: 100%;
   border:none;
   outline: none;
@@ -3171,7 +3172,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
   color: white;
   background-color: #00cc88;
   padding: 5px;
-  border-radius: 4px;
+  border-radius: 6px;
   width: 100px;
   border:none;
   outline: none;
@@ -3201,7 +3202,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
   padding: 0px;
   background-color: transparent;
   color:#595959;
-  border-radius: 4px;
+  border-radius: 6px;
   font-weight: 600;
   margin-top: 0px;
 }
@@ -3214,7 +3215,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
   padding: 0px;
   background-color: transparent;
   color:#999999;
-  border-radius: 4px;
+  border-radius: 6px;
 
 }
 
@@ -3286,7 +3287,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
 }
 .prod-start div.information_boxes div.environment_userprofile div.second_box_inline div.box_turn{
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-bottom: 80px;
   height: 100%;
 }
@@ -3318,7 +3319,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
   font-size: 15px;
   letter-spacing: 0.5px;
   margin: 5px;
-  border-radius: 4px;
+  border-radius: 6px;
   color: #333333;
 }
 .prod-start div.information_boxes div.environment_userprofile div.second_box_inline div.box_turn .nav-tabs>li.active>a{
@@ -3327,7 +3328,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
     background-color: #2089f8;
     border: 1px solid #ddd;
     border-bottom-color: transparent;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 
@@ -3509,7 +3510,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
   padding: 8px;
   color: white;
   border:0px;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .prod-start div.information_boxes div.environment_userprofile div.second_box_inline div.box_center_headers{
@@ -3523,7 +3524,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
   height: 100%;
   background-color: white;
   border: 1px solid #e6e6e6;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 10px;
   margin:0 auto;
   margin-bottom: 10px;
@@ -3594,7 +3595,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
 .prod-start div.information_boxes div.environment_userprofile div.second_box_inline div.box_turn .tab-content div.boxeachpublication .picturescontent img.one_image,.spaceLun img.one_image{
   width: 100%;
   display: inline-block;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor:pointer;
 }
 .prod-start div.information_boxes div.environment_userprofile div.second_box_inline div.box_turn .tab-content div.boxeachpublication div.cando{
@@ -3638,7 +3639,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
   background-color: #00cc88;
   border:1px solid #00cc88;
   color: white;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 5px;
   transition: all 0.3s ease;
   -webkit-appearance:none;
@@ -3652,7 +3653,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
   background-color: #f2f2f2;
   border:1px solid #cccccc;
   color: #737373;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 5px;
   transition: all 0.3s ease;
   -webkit-appearance:none;
@@ -3693,7 +3694,7 @@ form.change_portada_form input.save_changes[type='submit']:hover {
   background-color: #00cc88;
   border:1px solid #00cc88;
   color: white;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 5px;
   transition: all 0.3s ease;
   margin-bottom: 10px;
@@ -3760,7 +3761,7 @@ section.environmentUsers div.content_profile div.image div#port_img p.palabra{
   padding-left: 4px;
   color: white;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 section.environmentUsers div.content_profile div.image div#port_img input#ambassadorIMGs{
@@ -3813,6 +3814,7 @@ section.environmentUsers div.content_profile div.image #ct-items span{
 }
 section.environmentUsers div.content_profile form div.boxProfile{
   margin-bottom: 40px;
+  margin-top: 80px;
   background: transparent;
 
   -webkit-box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
@@ -4097,7 +4099,7 @@ section.environmentUsers div.content_profile div.btns_more_updates div.box_btns_
   border: none;
   padding: 8px;
   color: white;
-  border-radius: 4px;
+  border-radius: 6px;
   outline: none;
 }
 section.environmentUsers div.content_profile div.btns_more_updates div.box_btns_mail_pass a button.pass{
@@ -4105,7 +4107,7 @@ section.environmentUsers div.content_profile div.btns_more_updates div.box_btns_
   background-color: transparent;
   color: #0073e6;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: all 0.3s ease;
   outline: none;
 }
@@ -4124,7 +4126,7 @@ section.environmentUsers div.content_profile div.btns_more_updates div.delete_ac
   background-color: transparent;
   color: #ff4d4d;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: all 0.3s ease;
   outline: none;
 }
@@ -4190,7 +4192,7 @@ section.environmentUsers div.content_profile div.btns_more_updates div.delete_ac
 
 .prod-start div.information_boxes div.environment_userprofile div.second_box_inline div.box_turn .tab-content #menu2 div.box_for_ps .list_other_prod{
   border: 1px solid #e6e6e6;
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: white;
   transition: all 0.3s ease;
   padding: 0px;
@@ -4413,7 +4415,7 @@ section.environmentUsers div.content_profile div.btns_more_updates div.delete_ac
   background-color: white;
   width: 100%;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
     box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
   margin-bottom: 15px;
@@ -4863,7 +4865,7 @@ section.environmentUsers div.prodsDefault a button{
   max-width: 200px;
   background: #00cc88;
   color: white;
-  border-radius: 4px;
+  border-radius: 6px;
   outline: none;
   padding: 5px;
   transition: all 0.3s ease;
@@ -4916,7 +4918,7 @@ section.environmentUsers form#msform .action-button:hover, #msform .action-butto
 section.environmentUsers form#msform fieldset{
   background: white;
   border: 0 none;
-  border-radius: 4px;
+  border-radius: 6px;
   box-shadow: 0 0 8px 1px rgba(0,0,0,0.2);
   padding:20px 10px;
   box-sizing: border-box;
@@ -5068,7 +5070,7 @@ section.environmentUsers form#msform #error_horainicio{
     font-size: 13px;
     text-align: center;
     background: #f96464;
-    border-radius: 4px;
+    border-radius: 6px;
     margin-bottom: 3px;
 }
 section.environmentUsers form#msform #error_horafinal{
@@ -5076,7 +5078,7 @@ section.environmentUsers form#msform #error_horafinal{
     font-size: 13px;
     text-align: center;
     background: #f96464;
-    border-radius: 4px;
+    border-radius: 6px;
 }
 
 
@@ -5187,7 +5189,7 @@ section.environmentUsers form#msform ul.progressService li{
   color: black;
   text-transform: uppercase;
   font-size: 13px;
-  width: 20%;
+  width: 25%;
   float: left;
   position: relative;
 }
@@ -5516,7 +5518,7 @@ section.environmentUsersProds div.box_prods_vista div.compcreator div.names a bu
   width: 100px;
   color:white;
   background-color: #00cc88;
-  border-radius: 4px;
+  border-radius: 6px;
   border:none;
   padding: 5px;
 }
@@ -5707,7 +5709,7 @@ section.environmentUsersProds div.box_prods_vista div.box_by_flex div.box_prods_
   max-width: 300px;
   padding: 20px;
   font-size: 15px;
-  border-radius: 4px;
+  border-radius: 6px;
   font-weight: 600;
   vertical-align: 0.5px;
   border:none;
@@ -5743,6 +5745,8 @@ section.environmentUsersProds div.box_prods_vista div.box_by_flex div.box_prods_
   border-radius: 0px;
   padding-bottom: 20px;
   padding-top: 20px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 section.environmentUsersProds div.box_prods_vista div.box_by_flex div.box_prods_vista_1 div.description div.wtpmessage div.modal-content div.messagestoproducer{
@@ -5760,7 +5764,7 @@ section.environmentUsersProds div.box_prods_vista div.box_by_flex div.box_prods_
   background-color: white;
   padding: 14px;
   font-size: 15px;
-  border-radius: 4px;
+  border-radius: 6px;
   border:none;
   transition: all 0.3s ease;
   color:#00cc88;
@@ -5796,6 +5800,8 @@ section.environmentUsersProds div.box_prods_vista div.box_by_flex div.box_prods_
   color:white;
   text-align: center;
   padding: 8px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 section.environmentUsersProds div.box_prods_vista div.box_by_flex div.box_prods_vista_1 div.description div.wtpmessage div.modal-content div.subtext p{
   margin:0 0 0px;
@@ -6012,7 +6018,7 @@ section.environmentUsersProds div.optionsUpDe div.update a button{
   padding: 8px;
   color: white;
   background: #00cc88;
-  border-radius: 4px;
+  border-radius: 6px;
   outline: none;
   border: 1px solid #00cc88;
 }
@@ -6025,7 +6031,7 @@ section.environmentUsersProds div.optionsUpDe div.delete form input{
   width: 200px;
   padding: 8px;
   background: transparent;
-  border-radius: 4px;
+  border-radius: 6px;
   outline: none;
   color: #f96464;
   border: 1px solid #f96464;
@@ -6137,7 +6143,7 @@ section.environmentUsersProds div.optionsUpDe div.delete form input:hover{
 }
 .prod-start .perfiluser div.content_group form div.inputs_pass input[type='text']{
   width: 100%;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 8px;
   border:1px solid #a6a6a6;
   -webkit-appearance:none;
@@ -6152,7 +6158,7 @@ section.environmentUsersProds div.optionsUpDe div.delete form input:hover{
 }
 .prod-start .perfiluser div.content_group form div.inputs_pass input[type='password']{
   width: 100%;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 8px;
   border:1px solid #a6a6a6;
   margin-bottom: 5px;
@@ -6162,7 +6168,7 @@ section.environmentUsersProds div.optionsUpDe div.delete form input:hover{
   background-color: #00cc88;
   width: 150px;
   margin-top: 10px;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 8px;
   border:1px solid #00cc88;
   color: white;
@@ -6211,7 +6217,7 @@ section.environmentUsersProds div.optionsUpDe div.delete form input:hover{
 .prod-start .perfiluser div.content_group form div.content_for_fields select{
   width: 100%;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 14px;
@@ -6221,7 +6227,7 @@ section.environmentUsersProds div.optionsUpDe div.delete form input:hover{
 .prod-start .perfiluser div.content_group form div.content_for_fields textarea{
   height: 200px;
   width: 100%;
-  border-radius: 4px;
+  border-radius: 6px;
   outline: none;
   margin-top: 5px;
   padding: 8px;
@@ -6241,7 +6247,7 @@ section.environmentUsersProds div.optionsUpDe div.delete form input:hover{
   background-color: transparent;
   color: #ff4d4d;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 6px;
   transition: all 0.3s ease;
   outline: none;
 }
@@ -6337,7 +6343,7 @@ section.dashboardPage div.secondHeader div.ThreeSegments div.secondSHomePage div
 section.dashboardPage div.secondHeader div.ThreeSegments div.secondSHomePage div.box_form form select{
   width: 100%;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 6px;
   border:1px solid #d9d9d9;
   margin-bottom: 10px;
   -webkit-appearance: none;
@@ -6345,7 +6351,7 @@ section.dashboardPage div.secondHeader div.ThreeSegments div.secondSHomePage div
 section.dashboardPage div.secondHeader div.ThreeSegments div.secondSHomePage div.box_form form textarea{
   height: 200px;
   width: 100%;
-  border-radius: 4px;
+  border-radius: 6px;
   border:1px solid #d9d9d9;
   padding: 8px;
   -webkit-appearance: none;
@@ -6367,7 +6373,7 @@ section.dashboardPage div.secondHeader div.ThreeSegments div.secondSHomePage div
   color: white;
   border:1px solid #2089f8;
   background-color: #2089f8;
-  border-radius: 4px;
+  border-radius: 6px;
   outline: none;
   transition: all 0.3s ease;
   margin-top: 20px;
@@ -6408,7 +6414,7 @@ section.environmentUsersRecommends section.fieldContent div.boxCenterPData div.t
   -webkit-box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
     box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
   background-color: white;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 section.environmentUsersRecommends section.fieldContent div.boxCenterPData div.titlePage div.over{
@@ -6496,7 +6502,7 @@ section.environmentUsersRecommends section.fieldContent div.boxCenterReco div.ta
   font-size: 17px;
   background: #66b3ff;
   width: 15%;
-  border-radius: 4px;
+  border-radius: 6px;
   padding:5px;
   text-align: center;
   color: white;
@@ -6530,7 +6536,7 @@ section.environmentUsersRecommends section.fieldContent div.boxCenterReco div.sh
   border: 1px solid #4d94ff;
   padding: 5px;
   color: white;
-  border-radius: 4px;
+  border-radius: 6px;
   outline: none;
 }
 
@@ -6555,7 +6561,7 @@ section.environmentUsersRecommends section.fieldContent div.boxCenterReco div.ta
   font-size: 15px;
   letter-spacing: .6px;
   background: #00cc88;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 8px;
   text-align: center;
   color: white;
@@ -6625,7 +6631,7 @@ section.environmentUsersRecommends section.data_target div.box div.btn_drop butt
   letter-spacing: .6px;
   background: #00cc88;
   max-width: 150px;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 8px;
   text-align: center;
   color: white;
@@ -6702,7 +6708,7 @@ section.environmentUsersRecommends section.data_target div.box div.clientes div.
   color: white;
   background-color: #00cc88;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 /*Fin de popup instrucciones*/
@@ -6875,7 +6881,7 @@ section.environmentUsersRecommends section.data_target div.box div.box_start div
   margin: 5px;
   text-align: left;
   border: 1px solid #e6e6e6;
-  border-radius: 4px;
+  border-radius: 6px;
   display: flex;
   vertical-align: middle;
   align-items: center;
@@ -7021,7 +7027,7 @@ section.environmentUsersRecommends section.data_target div.box div.box_start div
   padding: 0 0 0px;
   color: #0663c6;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 6px;
   letter-spacing: .8px;
   font-weight: 600;
   background-color: white;
@@ -7211,7 +7217,7 @@ section.environmentUsersRecommends section.fieldContent div.boxCenterReco2 div.t
   font-size: 17px;
   background: #66b3ff;
   width: 15%;
-  border-radius: 4px;
+  border-radius: 6px;
   padding:5px;
   text-align: center;
   color: white;
@@ -7245,7 +7251,7 @@ section.environmentUsersRecommends section.fieldContent div.boxCenterReco2 div.s
   border: 1px solid #4d94ff;
   padding: 5px;
   color: white;
-  border-radius: 4px;
+  border-radius: 6px;
   outline: none;
 }
 
@@ -7502,7 +7508,7 @@ section.dashboardPage div.secondHeader div.subox div.follow_dashboard{
   height: 100%;
   margin:0 auto;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 6px;
   -webkit-box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
     box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
 }
@@ -7544,7 +7550,7 @@ section.dashboardPage div.secondHeader div.subox div.follow_dashboard div.box_ce
   background-color: #00cc88;
   color: white;
   border:none;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 5px;
 }
 section.dashboardPage div.secondHeader div.subox div.follow_dashboard div.box_little{
@@ -7623,7 +7629,7 @@ section.dashboardPage div.g_box_views div.profile{
   text-align: left;
   margin: 0 auto;
   margin-bottom: 20px;
-  border-radius: 4px;
+  border-radius: 6px;
   webkit-box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
   box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
 }
@@ -7694,7 +7700,7 @@ section.dashboardPage div.g_box_views div.profile div.comp_name p.representative
 }
 section.dashboardPage div.g_box_views div.profile div.comp_name a button{
   width: 100%;
-  border-radius: 4px;
+  border-radius: 6px;
   color: white;
   background-color: #00cc88;
   border:none;
@@ -7718,7 +7724,7 @@ section.dashboardPage div.g_box_views div.theyviews h2{
 }
 section.dashboardPage div.g_box_views div.theyviews div.each_view{
   background: #f2f2f2;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-bottom: 10px;
   padding: 10px;
   transition: all 0.3s ease;
@@ -7778,7 +7784,7 @@ section.environmentUsers button.aeroprods{
   color: white;
   background-color: #2089f8;
   border:0px;
-  border-radius: 4px;
+  border-radius: 6px;
   margin-top: 20px;
 }
 section.environmentUsers div.mod_restrict p.messeedit{
@@ -8134,7 +8140,7 @@ section.environmentUsers form#msform ul#progressbar_choco li.active.restricted:b
     vertical-align: middle;
     align-items: center;
     padding: 4px;
-    border-radius: 4px;
+    border-radius: 6px;
     width: 80%;
     margin-right: 10px;
   }
@@ -8185,7 +8191,7 @@ section.environmentUsers form#msform ul#progressbar_choco li.active.restricted:b
     font-size: 13px;
     width: 20%;
     float: right;
-    border-radius: 4px;
+    border-radius: 6px;
   }
 
 
@@ -8342,7 +8348,7 @@ section.environmentUsers form#msform ul#progressbar_choco li.active.restricted:b
   header .HomePage nav ul.resp li a.logout{
     text-align: center;
     background-color: white;
-    border-radius: 4px;
+    border-radius: 6px;
     -webkit-box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
     box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
@@ -8363,7 +8369,7 @@ section.environmentUsers form#msform ul#progressbar_choco li.active.restricted:b
     text-decoration: none;
     transition: all 0.3s ease;
     background-color: #00cc88;
-    border-radius: 4px;
+    border-radius: 6px;
     -webkit-box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
     box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
     margin-bottom: 15px;
@@ -8436,7 +8442,7 @@ section.environmentUsers form#msform ul#progressbar_choco li.active.restricted:b
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: white;
-    border-radius: 4px;
+    border-radius: 6px;
     padding: 5px;
     margin-bottom: 10px;
     -webkit-box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
@@ -8609,7 +8615,7 @@ section.environmentUsers form#msform ul#progressbar_choco li.active.restricted:b
     background-color: white;
     border: 1px solid #0663c6;
     color: #0663c6;
-    border-radius: 4px;
+    border-radius: 6px;
     outline: none;
     padding: 6px;
     width: 70%;
@@ -8774,7 +8780,7 @@ section.environmentUsers form#msform ul#progressbar_choco li.active.restricted:b
     border:none;
     padding: 14px;
     font-size: 13px;
-    border-radius: 4px;
+    border-radius: 6px;
   }
   /*FIN DE PRODUCTO RESTRINGIDO*/
 
@@ -9138,7 +9144,7 @@ section.environmentUsers form#msform ul#progressbar_choco li.active.restricted:b
     width: 100px;
     color:white;
     background-color: #00cc88;
-    border-radius: 4px;
+    border-radius: 6px;
     border:none;
     padding: 5px;
   }
@@ -9525,7 +9531,7 @@ section.environmentUsers form#msform ul#progressbar_choco li.active.restricted:b
 
   .prod-start div.information_boxes div.environment_userprofile div.second_box_inline div.box_turn{
     padding: 10px;
-    border-radius: 4px;
+    border-radius: 6px;
     margin-bottom: 180px;
     height: 100%;
   }

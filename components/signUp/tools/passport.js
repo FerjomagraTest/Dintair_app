@@ -140,8 +140,8 @@ module.exports = function(passport){
 
 					
 
-			    var api_key = 'key-d8214dad23cb6f4a0b54f5d346cb3656';
-				var domain = 'dintair.com';
+			    var api_key = process.env.MAILGUN_APIKEY;
+				var domain = process.env.MAILGUN_DOMAIN;
 				var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 			    
 			    var data = {
@@ -206,12 +206,12 @@ module.exports = function(passport){
 			    };
 				
 			     
-			    /*mailgun.messages().send(data, function (error, body) {
+			    mailgun.messages().send(data, function (error, body) {
 			      if(error){
 			        console.log(error)
 			      }
 			        console.log(body);
-			    });*/
+			    });
 			    //Fin de para mailgun
 
 				newUser.save(function(err){

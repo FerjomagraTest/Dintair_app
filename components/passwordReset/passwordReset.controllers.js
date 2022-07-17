@@ -35,8 +35,8 @@ controller.passwordResetPost = (req,res) => {
     function(token, user, done){
       //Para mailgun
       const content = ''
-      var api_key = 'key-d8214dad23cb6f4a0b54f5d346cb3656';
-      var domain = 'dintair.com';
+      var api_key = process.env.MAILGUN_APIKEY;
+      var domain = process.env.MAILGUN_DOMAIN;
       var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
        
       var data = {
@@ -46,9 +46,14 @@ controller.passwordResetPost = (req,res) => {
         //text: 'Bienvenido a Everest',
         //html: 'Bienvenido a Everest '+ newUser.comp_name
         //html: fs.readFileSync('src/views/espanol/foremails/pass_reset.html', 'utf-8')
-        /*'<a href="https://' + req.headers.host + '/Dintair/passwordReset/new/procedure/' + token + '\n\n">'+
-                      '<button style="width: 250px; padding:5px; background: #1a75ff; border-radius: 4px; color: white; border: 1px solid #1a75ff; outline: none;"> Restaurar mi contraseña </button>'+
-                    '</a>'+*/
+        // '<a href="https://' + req.headers.host + '/Dintair/passwordReset/new/procedure/' + token + '\n\n">'+
+        //   '<button style="width: 250px; padding:5px; background: #1a75ff; border-radius: 4px; color: white; border: 1px solid #1a75ff; outline: none;"> Restaurar mi contraseña </button>'+
+        // '</a>'+
+
+        // '<a href="https://www.dintair.com/Dintair/passwordReset/new/procedure/' + token + '\n\n">'+
+        //   '<button style="width: 250px; padding:5px; background: #1a75ff; border-radius: 4px; color: white; border: 1px solid #1a75ff; outline: none;"> Restaurar mi contraseña </button>'+
+        // '</a>'+
+        
         html: '<body style="margin: 0px; padding: 0px; background: hsl(0, 0%, 99%); padding: 0px; text-align: center;"">'+
                 '<div style="text-align: center; width: 100%; margin: 0 auto; max-width: 600px; background: white; padding: 5px; border-bottom: 1px solid #e6e6e6;">'+
                   '<div style="text-align: center; margin-top: 10px; margin-bottom: 10px; margin: 0 auto;">'+
@@ -61,9 +66,9 @@ controller.passwordResetPost = (req,res) => {
 
                     '<p style="font-size: 15px; color: #737373; text-align: left; letter-spacing: 0.2px; margin: 0 0 0px; margin-bottom: 20px;">Continue con el proceso dando clic en "Restaurar mi contraseña".</p>'+
 
-                    '<a href="https://www.dintair.com/Dintair/passwordReset/new/procedure/' + token + '\n\n">'+
-                      '<button style="width: 250px; padding:5px; background: #1a75ff; border-radius: 4px; color: white; border: 1px solid #1a75ff; outline: none;"> Restaurar mi contraseña </button>'+
-                    '</a>'+
+                    '<a href="http://' + req.headers.host + '/Dintair/passwordReset/new/procedure/' + token + '\n\n">'+
+                     '<button style="width: 250px; padding:5px; background: #1a75ff; border-radius: 4px; color: white; border: 1px solid #1a75ff; outline: none;"> Restaurar mi contraseña </button>'+
+                   '</a>'+
                   
                   '</div>'+
                 
@@ -137,12 +142,12 @@ controller.passwordResetView = (req,res) => {
 controller.passwordResetToken = (req,res) => {
   User.findOne({resetPasswordToken : req.params.token, resetPasswordExpires : {$gt: Date.now()}}, function(err, user){
     if(!user){
-      req.flash('errorr', 'La contraseña es invalida o ha expirado')
+      req.flash('error', 'La contraseña es invalida o ha expirado')
       return res.redirect('/Dintair/passwordReset/new')
     }
-    res.render('espanol/password_reset_view', {
+    res.render('views/spanish/login/passwordReset/passwordResetCheck', {
       token: req.params.token,
-      message : req.flash('errorr')
+      message : req.flash('error'),
     })
   })
 }
@@ -175,8 +180,8 @@ controller.passwordResetTokenPut = (req,res) => {
     function(user, done) {
       //Para mailgun
       const content = ''
-      var api_key = 'key-d8214dad23cb6f4a0b54f5d346cb3656';
-      var domain = 'dintair.com';
+      var api_key = process.env.MAILGUN_APIKEY;
+      var domain = process.env.MAILGUN_DOMAIN;
       var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
        
       var data = {
@@ -229,11 +234,12 @@ controller.passwordResetTokenPut = (req,res) => {
         }
           console.log(body);
       });
-      //Fin d epara mailgun
+      //Fin de para mailgun
       return done(null, false, req.flash('ConfirmMessage', '¡Este es el último paso! Por favor, ingrese nuevamente su contraseña.'))
     }
   ], function(err) {
     res.redirect('/Dintair/profile/resetPassword/:id');
   });
 }
+
 module.exports = controller;
