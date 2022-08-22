@@ -23,7 +23,7 @@ block content
             div.markets_place_3(style='background-image: url("/images/back_chat.PNG");')
               div.box_to_mplace()
                 h3 Agregar un producto restringido
-                a(href="/Dintair/restricted")
+                a(href="/Dintair/imports/addProduct")
                   button() Agregar
 
           if user.username == 'chocolatinape@gmail.com'
@@ -38,15 +38,13 @@ block content
               ul
                 li © 2021 Dintair.
                 li
-                  a(href="/Dintair/aeropost", target="_blank") Productos restringidos
+                  a(href="/Dintair/import/restricted", target="_blank") Productos restringidos
                 li
                   a(href='/Dintair/termsOfUse', target='_blank') Condiciones de uso
                 li
                   a(href='/Dintair/privacyPolice', target='_blank') Política de privacidad
                 li
                   a(href='/Dintair/contact/us') Contáctanos
-                li
-                  a(href='/Dintair/companies/catalogs', target='_blank') Productores
 
 
 
@@ -74,18 +72,18 @@ block content
 
 
           nav.content-menu-publication
-            //if user.username == 'aeropost.lim@aeropost.com'
-              div.markets_place_3_add_product(style='background-image: url("/images/back_chat.PNG");')
-                div.box_to_mplace()
-                  h3 Agregar un producto restringido
-                  a(href="/Dintair/restricted")
-                    button() Agregar
+            //- if user.username == 'aeropost.lim@aeropost.com'
+            //-   div.markets_place_3_add_product(style='background-image: url("/images/back_chat.PNG");')
+            //-     div.box_to_mplace()
+            //-       h3 Agregar un producto restringido
+            //-       a(href="/Dintair/restricted")
+            //-         button() Agregar
             ul
               a(href="/Dintair", class="") 
                 li.active Recomendados
               
-              //a(href="/Dintair/publication-post", class="") 
-                li Contactos
+              //- //a(href="/Dintair/publication-post", class="") 
+              //-   li Contactos
           div.boxCreatePublication.js-content-post(data-url-like="/Dintair/publication-like")
 
             if publications.length
@@ -194,40 +192,40 @@ block content
 
                                     div.messages(id='result_3')
 
-                      div.cando.like
-                        div.check.boxsize
-                          div.countn
-                            img(src='/images/users/postPublications/recommend-ok.png')
-                            .js-like-number
+                      //- div.cando.like
+                      //-   div.check.boxsize
+                      //-     div.countn
+                      //-       img(src='/images/users/postPublications/recommend-ok.png')
+                      //-       .js-like-number
 
-                              if publication.like == undefined
-                                p 0
-                              else
+                      //-         if publication.like == undefined
+                      //-           p 0
+                      //-         else
 
-                                p #{publication.like}
+                      //-           p #{publication.like}
                           
-                          if myLike.indexOf(publication._id.toString()) != -1
-                            button.button.btn-like.btn-like-ok.js-like()
-                              img(src='/images/users/postPublications/recommend-ok.png')
-                              | Recomendar
+                      //-     if myLike.indexOf(publication._id.toString()) != -1
+                      //-       button.button.btn-like.btn-like-ok.js-like()
+                      //-         img(src='/images/users/postPublications/recommend-ok.png')
+                      //-         | Recomendar
                           
-                          else
-                            button.button.btn-like.btn-like-ok.js-like()
-                              img(src='/images/users/postPublications/recommend-not.png')
-                              | Recomendar
+                      //-     else
+                      //-       button.button.btn-like.btn-like-ok.js-like()
+                      //-         img(src='/images/users/postPublications/recommend-not.png')
+                      //-         | Recomendar
 
-                          div.count_n_2(style="display:none;")
-                            .js-like-number
-                              if publication.like == undefined
-                                | 0
-                              else
-                                | #{publication.like}
+                      //-     div.count_n_2(style="display:none;")
+                      //-       .js-like-number
+                      //-         if publication.like == undefined
+                      //-           | 0
+                      //-         else
+                      //-           | #{publication.like}
                       
 
-                      if publication.creator.username == user.username
-                        div.e_public_ation
-                          a(href='/Dintair/make/public/edition/#{publication.id}')
-                            button() Editar publicación
+                      //- if publication.creator.username == user.username
+                      //-   div.e_public_ation
+                      //-     a(href='/Dintair/make/public/edition/#{publication.id}')
+                      //-       button() Editar publicación
                       
 
                 

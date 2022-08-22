@@ -11,10 +11,10 @@ header
                 img(src='/images/dintair/dintair_iso.png')
 
 
-            div.alertsbtns
-              a#nhp(href='/Dintair/notification/profile')
-                p#not(data-url='/Dintair/exists-np')
-                img(src='/images/users/icons/bell.png')
+            //- div.alertsbtns
+            //-   a#nhp(href='/Dintair/notification/profile')
+            //-     p#not(data-url='/Dintair/exists-np')
+            //-     img(src='/images/users/icons/bell.png')
 
               
             div.alertsbtns
@@ -52,23 +52,23 @@ header
             div.editing
               li
                 a(href='/Dintair/profile/user/edit') Editar perfil
-              li
-                a(href='/Dintair/profile/Ambassador') Editar Representante
+              //- li
+              //-   a(href='/Dintair/profile/Ambassador') Editar Representante
 
             li
               a(href='/Dintair/kindProduct')
                 img(src='/images/icons/alMayorProd.png')
                 | Mis productos
                 
-            li
-              a(href='/Dintair/contacts/f&f')
-                img(src='/images/users/icons/profile_footer.png')
-                | Contactos
+            //- li
+            //-   a(href='/Dintair/contacts/f&f')
+            //-     img(src='/images/users/icons/profile_footer.png')
+            //-     | Contactos
 
-            //li
-              a(href='/Dintair/Search/1')
-                img(src='/images/icons/scope_d.png')
-                | Buscar
+            //- li
+            //-   a(href='/Dintair/Search/1')
+            //-     img(src='/images/icons/scope_d.png')
+            //-     | Buscar
             
             li.logout
               a(href='/logout') Cerrar sesión
@@ -97,9 +97,9 @@ header
                     h3 Nuevo Servicio
 
               if user.username == 'aeropost.lim@aeropost.com'
-                  a(href='/Dintair/restricted')
+                  a(href='/Dintair/imports/addProduct')
                     div.servs()
-                      img(src='/images/icons/contacts_n.png')
+                      img(src='/images/icons/importList.png')
                       h3 Producto restringido
 
 
@@ -123,9 +123,9 @@ header
           a.terms(href='/Dintair/kindProduct') 
             img(src='/images/icons/alMayorProd.png')
             |Mis Productos
-          a.terms(href='/Dintair/contacts/f&f') 
-            img(src='/images/users/icons/profile_footer.png')
-            | Mis Contactos
+          //- a.terms(href='/Dintair/contacts/f&f') 
+          //-   img(src='/images/users/icons/profile_footer.png')
+          //-   | Mis Contactos
 
         li
           a.terms(href='/Dintair/privacyPolice', target='_blank') 
@@ -160,10 +160,10 @@ header
       input(type="hidden" name="userIdEmisor" id="userIdEmisor" value="#{user._id}")
 
 
-      div.alertsbtns
-        a#nhph(href='/Dintair/notification/profile')
-          p#not(data-url='/Dintair/exists-np') 
-          img(src='/images/users/icons/bell.png')
+      //- div.alertsbtns
+      //-   a#nhph(href='/Dintair/notification/profile')
+      //-     p#not(data-url='/Dintair/exists-np') 
+      //-     img(src='/images/users/icons/bell.png')
 
 
     div.secondSHomePage()
@@ -206,9 +206,9 @@ header
                       img(src='/images/users/icons/truck_icon.png')
                       h3 Nuevo Servicio
                   if user.username == 'aeropost.lim@aeropost.com'
-                    a(href='/Dintair/restricted')
+                    a(href='/Dintair/imports/addProduct')
                       div.servs()
-                        img(src='/images/users/icons/contacts_n.png')
+                        img(src='/images/users/icons/importList.png')
                         h3 Producto restringido
 
 

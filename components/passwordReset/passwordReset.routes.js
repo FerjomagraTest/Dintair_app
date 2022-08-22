@@ -9,6 +9,6 @@ router.get('/Dintair/passwordReset', passwordResetControllers.passwordResetView)
 
 router.get('/Dintair/passwordReset/new/procedure/:token', passwordResetControllers.passwordResetToken)
 
-router.put('/Dintair/passwordReset/new/procedure/:token', passwordResetControllers.passwordResetTokenPut)
+router.post('/Dintair/passwordReset/new/procedure/:token', passwordResetControllers.passwordResetTokenPut)
 
 module.exports = router;

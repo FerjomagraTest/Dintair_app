@@ -25,6 +25,8 @@ var upload = multer({
 
 router.get('/Dintair/profile/user', isLoggedIn, usersControllers.userProfileView)
 
+router.get('/Dintair/:id', isLoggedIn, usersControllers.otherUserProfile)
+
 router.post('/Dintair/profile/user/:id/:comp_name', isLoggedIn, upload.single('imagePortada'), usersControllers.changePortrait)
 
 router.post('/Dintair/picture/:id', isLoggedIn, upload.single('imgperfil'), usersControllers.changeLogo)
@@ -38,6 +40,18 @@ router.post('/Dintair/profile/user/:id', isLoggedIn, upload.single('imgperfil'),
 router.get('/Dintair/profile/resetPassword/:id', isLoggedIn, usersControllers.passwordResetView)
 
 router.post('/Dintair/profile/resetPassword/:id', isLoggedIn, usersControllers.passwordResetPut)
+
+router.get('/Dintair/username/updating', isLoggedIn, usersControllers.updateEmailView)
+
+router.post('/Dintair/profile/username/:id/:username', isLoggedIn, usersControllers.updateEmailPut)
+
+router.get('/Dintair/profile/procedure/DELETE/:id/:comp_name/:username', isLoggedIn, usersControllers.deleteAccountProcedure)
+
+router.post('/Dintair/profile/DELETE/:id/:comp_name/:username/:fecha_signup', isLoggedIn, usersControllers.deleteAccountDeleteMethod)
+
+router.get('/Dintair/endAccount', usersControllers.endAccount)
+
+router.get('/Dintair/see/you/later/dintair', usersControllers.byeByeDintair)
 
 function isLoggedIn(req,res,next){
     if (req.isAuthenticated()){

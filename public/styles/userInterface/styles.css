@@ -6068,6 +6068,8 @@ section.environmentUsersProds div.optionsUpDe div.delete form input:hover{
   margin:0 auto;
   margin-top: 100px;
   margin-bottom: 50px;
+  padding: 15px;
+  border-radius: 6px;
 }
 
 .prod-start .perfiluser div.content_group p.messageWrong{
@@ -6648,7 +6650,7 @@ section.environmentUsersRecommends section.data_target div.box button:hover{
 
 /*Inicio de Popup instrucciones*/
 section.environmentUsersRecommends section.data_target div.box div.clientes div.box_for_instructor{
-  padding: 10px;
+  padding: 25px;
 }
 section.environmentUsersRecommends section.data_target div.box div.clientes div.box_for_instructor div.title{
   background-color: #00cc88;
@@ -6788,6 +6790,7 @@ section.environmentUsersRecommends section.data_target div.box div.box_start{
   width: 98%;
   max-width: 500px;
   padding: 5px;
+  border-radius: 6px;
   background-color: white;
   margin-top: 15px;
 }
@@ -7048,7 +7051,7 @@ section.environmentUsersRecommends section.data_target div.box div.box_start div
   color: white;  float: right;
   padding: 5px;
   width: 100px;
-  border-radius: 2px;
+  border-radius: 6px;
   margin-top: 10px;
   transition: all 0.3s ease;
   border:none;

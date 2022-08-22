@@ -50,32 +50,34 @@ var loginRouter = require('./components/login/login.routes.js')
 var indexRouter = require('./components/indexPage/indexPage.routes.js')
 var passwordResetRouter = require('./components/passwordReset/passwordReset.routes.js')
 var signupRouter = require('./components/signUp/signUp.routes.js')
-var restrcitedProductsRouter = require('./components/restrictedProducts/restrictedProducts.routes.js')
 var productsRouter = require('./components/products/products.routes.js')
 var servicesRouter = require('./components/services/services.routes.js')
 var contactusRouter = require('./components/contactUs/contactus.routes')
 var politicsConditionsRouter = require('./components/politicsConditions/politicsConditions.routes')
 var logoutRouter = require('./components/logout/logout.routes')
-
 //user interface
 var usersRouter = require('./components/users/users.routes')
-var headerSearchRoutes = require('./components/searching/header/headerSearch.routes')
+var headerSearchRouter = require('./components/searching/header/headerSearch.routes')
+var marketsRouter = require('./components/markets/markets.routes')
+var importExportProductsRouter = require('./components/importExportServices/importExport.routes')
+var publicationsRouter = require('./components/publication/publication.routes')
 
 app.use('/',
   indexRouter,
   loginRouter,
   passwordResetRouter,
   signupRouter,
-  restrcitedProductsRouter,
   productsRouter,
   servicesRouter,
   contactusRouter,
   politicsConditionsRouter,
   logoutRouter,
-  
+  marketsRouter,
+  importExportProductsRouter,
   //userInterface
   usersRouter,
-  headerSearchRoutes,
+  headerSearchRouter,
+  publicationsRouter
 
 )
 //login

@@ -100,7 +100,6 @@ controller.passwordResetPost = (req,res) => {
                   '</div>'+
 
                   '<h4 style="color: #737373; font-size: 12px; letter-spacing: 0.2px;"> © Copyright 2018, Dintair all rights reserved </h4>'+
-                  '<h4 style="color: #737373; font-size: 10px; letter-spacing: 0.2px;"> Av. El Derby 575, Santiago de Surco, Lima, Perú </h4>'+
                 '</div>'+
                 '<div style="margin: 0 auto; text-align: center;">'+
                   '<h4 style="color: #737373; font-size: 10px; letter-spacing: 0.2px;"> Este mensaje se envió a '+
@@ -155,7 +154,7 @@ controller.passwordResetToken = (req,res) => {
 controller.passwordResetTokenPut = (req,res) => {
   async.waterfall([
     function(done) {
-      User.findOne({ resetPasswordToken: req.params.token, resetPasswordExpires: { $gt: Date.now() } }, function(err, user) {
+      User.findOne({resetPasswordToken: req.params.token, resetPasswordExpires: { $gt: Date.now() } }, function(err, user) {
         if (!user) {
           req.flash('error', 'Password reset token is invalid or has expired.');
           return res.redirect('back');
@@ -215,7 +214,6 @@ controller.passwordResetTokenPut = (req,res) => {
 
 
                   '<h4 style="color: #737373; font-size: 12px; letter-spacing: 0.2px;"> © Copyright 2018, Dintair all rights reserved </h4>'+
-                  '<h4 style="color: #737373; font-size: 10px; letter-spacing: 0.2px;"> Av. El Derby 575, Santiago de Surco, Lima, Perú </h4>'+
 
                   
                 '</div>'+
@@ -239,7 +237,11 @@ controller.passwordResetTokenPut = (req,res) => {
     }
   ], function(err) {
     res.redirect('/Dintair/profile/resetPassword/:id');
+    // res.redirect('/Dintair/es/Signin')
+    
+    
   });
 }
+
 
 module.exports = controller;

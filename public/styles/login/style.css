@@ -31,7 +31,6 @@ body{
 }
 
 .select-start-sign-in p.messagesend{
-
   text-align: center;
   background: #00cc88;
   width: 100%;
@@ -39,7 +38,16 @@ body{
   padding: 10px;
   font-size: 16px;
   border-radius: 10px;
-  
+}
+
+.select-start-sign-in p.restorepassword{
+  text-align: center;
+  background: #00cc88;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
 }
 
 .select-start-sign-in p.loginmessage{
